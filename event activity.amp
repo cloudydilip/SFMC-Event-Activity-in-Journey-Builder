@@ -1,0 +1,12 @@
+Host: https://YOUR_SUBDOMAIN.rest.marketingcloudapis.com
+POST /interaction/v1/events
+Content-Type: application/json
+Authorization: Bearer YOUR_ACCESS_TOKEN
+
+{
+    "ContactKey": {{emailAddress}},
+    "EventDefinitionKey": {{EventDefinitionKey}},
+    "Data": {
+        "email": {{emailAddress}},
+        "DOIConfirmed": "false" }
+}
